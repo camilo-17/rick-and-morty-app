@@ -1,4 +1,8 @@
-# Getting Started with Create React App
+# Rick and morty app
+
+## About project
+
+This project was create for learning react and react material
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 

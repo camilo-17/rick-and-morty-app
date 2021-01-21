@@ -16,7 +16,7 @@ const styles = {
 const Working = () => {
     return (
         <div style={styles.list_data}>
-            <h3>Esta pagina esta en construcción, pronto estara lista!</h3>
+            <h3>Esta página esta en construcción, pronto estará lista!</h3>
             <img src={imageWork} alt="en contruccion" width="500px"/>
         </div>
     )
