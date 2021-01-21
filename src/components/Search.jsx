@@ -19,15 +19,15 @@ const Styles = {
     }
 }
 
-const onChange = (e) => {
-    console.log(e.target.value);
-    if(e.target.value === 'juli1234') {
-        alert(`Esto fue posible gracias a ti :D`);
-    }
-}
 
-const Search = () => {
+const Search = (props) => {
+    const { setSearch } = props;
     const classes = useStyles();
+    
+    const onChange = (e) => {
+        e.preventDefault();
+        setSearch(e.target.value);
+    }
     return (
         <form className={classes.root} noValidate autoComplete="off" style={{textAlign: 'center'}}>
             <TextField id="outlined-basic" label="Search..." variant="outlined" style={Styles.text} onChange={onChange} />
