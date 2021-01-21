@@ -4,3 +4,60 @@
     flex-direction: column;
     align-items: center;
 }
+
+footer {
+    height: 70px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #3f51b5;
+    color: antiquewhite;
+}
+.social-link {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    margin: 0 10px;
+}
+.social-link.facebook {
+    background-image: url('../static/facebook.svg');
+    background-size: 50px 50px;
+    margin: 0 10px;
+}
+
+.social-link.instagram {
+    background-image: url('../static/instagram.svg');
+    background-size: 50px 50px;
+    margin: 0 10px;
+}
+
+.social-link.github {
+    background-image: url('../static/github.svg');
+    background-size: 50px 50px;
+    margin: 0 10px;
+}
+
+.social-link.linkedin {
+    background-image: url('../static/linkedin.svg');
+    background-size: 50px 50px;
+    margin: 0 10px;
+}
+
+
+.social {
+    // display: flex;
+    text-align: center;
+    color: antiquewhite;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+.social p {
+    font-family: Roboto;
+    margin-bottom: 0.4em;
+}
+
+.text-container {
+    text-align: center;
+    margin: 0%;
+}

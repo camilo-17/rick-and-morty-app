@@ -1,4 +1,6 @@
-import React, { useState, useEffect } from 'react';
+
+import { useState, useEffect } from 'react';
+import { server } from '../environment/environment';
 import api from '../services/api';
 
 const Controller = () => {
@@ -9,8 +11,9 @@ const Controller = () => {
     const [ error , setError ]            = useState({status: false, limit: false});
     const [ counter, setCounter ]         = useState(1);
     const [ numberPages, setNumberPages ] = useState(2);
-    const [ search, setSearch ]           = useState('');
-      
+    const [ search, setSearch ]           = useState('');    
+    const [ find, setFind ]               = useState(server.PATH_CHARACTER);
+  
     useEffect(() => { 
         if(search !== '') {
             return;
@@ -22,7 +25,6 @@ const Controller = () => {
         async function getData() {        
             try {
                 const dataResults = await api.info.getCharacters(counter).catch((e) => setError({status: true, limit: false}));
-                console.log(`entre al efecto de data`)
                 setNumberPages(dataResults.pages);
                 setData(counter !== 1 ? data.concat(dataResults.results) : dataResults.results);           
             } catch (error) {
@@ -31,7 +33,7 @@ const Controller = () => {
             }
         }
         getData();  
-      }, [counter, search]);
+      }, [ counter, search ]);
 
       useEffect(() => {
         if(search === '') {
@@ -40,7 +42,6 @@ const Controller = () => {
         }
         async function getData() {
             try {
-                console.log(`entre a search`)
                 const dataResults = await api.info.getCharactersByName(search)
                                                     .catch((e) => setError({status: true, limit: false})); 
                 
@@ -56,8 +57,6 @@ const Controller = () => {
             }
         }
         getData();
-        // console.log(search);
-
       },[search]);
 
     return {
@@ -72,7 +71,9 @@ const Controller = () => {
          numberPages,
          setNumberPages,
          search,
-         setSearch
+         setSearch,
+         find,
+         setFind
         }  
 }
 

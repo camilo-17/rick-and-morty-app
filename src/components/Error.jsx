@@ -11,7 +11,7 @@ const Error = () => {
                     404 Not found
                 </Typography>
                 <Typography variant="h4" component="h2">
-                    Please try later
+                    El recurso que solicitaste no existe
                 </Typography>
             </div>
         </div>

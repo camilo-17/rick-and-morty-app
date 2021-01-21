@@ -7,13 +7,15 @@ import Fab from '@material-ui/core/Fab';
 import Snackbar from '@material-ui/core/Snackbar';
 import ArrowDownwardOutlinedIcon  from '@material-ui/icons//ArrowDownwardOutlined';
 import Controller from '../hooks/Controller';
+import '../assets/styles/View.scss';
 
 const styles = {
     list_data: {
         display: 'flex' , 
-        justifyContent: 'center', 
+        justifyContent: 'flex-start', 
         flexDirection: 'column',
-        alignItems: 'center'
+        alignItems: 'center',
+        minHeight: '70vh'
     }
 };
 
@@ -32,9 +34,9 @@ const View = () => {
     const goToErrorPage = () => {
         history.push('/error');
     } 
- 
+
    return (
-        <div>
+        <div className="images-container" >
             <Search setSearch = {setSearch} />
             { error.status !== true ? 
             <div style={styles.list_data} >
@@ -46,6 +48,7 @@ const View = () => {
                             img={ item.hasOwnProperty('image') ? item.image : null }
                             alt={ item.hasOwnProperty('name') ? item.name : null  }
                             author= {item.species || null}
+                            data={ item !== undefined ? item : null }
                         />
                     )) 
                     }

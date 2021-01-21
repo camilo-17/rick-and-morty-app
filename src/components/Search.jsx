@@ -23,14 +23,14 @@ const Styles = {
 const Search = (props) => {
     const { setSearch } = props;
     const classes = useStyles();
-    
+
     const onChange = (e) => {
-        e.preventDefault();
         setSearch(e.target.value);
     }
+
     return (
-        <form className={classes.root} noValidate autoComplete="off" style={{textAlign: 'center'}}>
-            <TextField id="outlined-basic" label="Search..." variant="outlined" style={Styles.text} onChange={onChange} />
+        <form className={classes.root} noValidate autoComplete="off" style={{textAlign: 'center'}} onSubmit={(e) => e.preventDefault()}>
+            <TextField type="input" id="search" label="Search..." variant="outlined" style={Styles.text} onChange={onChange} />
         </form>
     )
 }

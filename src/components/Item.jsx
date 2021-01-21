@@ -6,6 +6,7 @@ import Grow from '@material-ui/core/Grow';
 import IconButton from '@material-ui/core/IconButton';
 import InfoIcon from '@material-ui/icons/Info';
 import Skeleton from '@material-ui/core/Skeleton';
+import Info from '../components/Info';
 
 const useStyles = makeStyles({
     root: {
@@ -19,7 +20,17 @@ const useStyles = makeStyles({
 
 const Item = (props) => {
     const classes = useStyles();
-    const { img, alt, author } = props;
+    const { img, alt, author, data } = props;
+
+    const [open, setOpen] = React.useState(false);
+
+    const handleClick = () => {
+        setOpen(true);
+    }
+
+    const handleClose = (some) => {
+        setOpen(false);
+    }
     return (
         <React.Fragment>
             {
@@ -34,10 +45,11 @@ const Item = (props) => {
                 {...(true ? { timeout: 1000 } : {})}
             >
                 <ImageListItem>
-                    <img
+                    <img style={{cursor: 'pointer'}}
                         src={img}
                         name ="play"
                         alt={alt}
+                        onClick={handleClick}
                     />
                     <ImageListItemBar
                         title={alt}
@@ -46,11 +58,13 @@ const Item = (props) => {
                         <IconButton
                             aria-label={`info about ${alt}`}
                             className={classes.icon}
+                            onClick={handleClick}
                         >
                             <InfoIcon />
                         </IconButton>
                         }
                     />
+                    <Info  open={open}  onClose={handleClose} item= {data !== undefined ? data : null} />
                 </ImageListItem>
             </Grow>
             }
