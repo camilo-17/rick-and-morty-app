@@ -1,22 +1,28 @@
 {
   "files": {
-    "main.css": "/rick-and-morty-app/static/css/main.003afecf.chunk.css",
-    "main.js": "/rick-and-morty-app/static/js/main.9b633364.chunk.js",
-    "main.js.map": "/rick-and-morty-app/static/js/main.9b633364.chunk.js.map",
+    "main.css": "/rick-and-morty-app/static/css/main.423e7ba7.chunk.css",
+    "main.js": "/rick-and-morty-app/static/js/main.93f94335.chunk.js",
+    "main.js.map": "/rick-and-morty-app/static/js/main.93f94335.chunk.js.map",
     "runtime-main.js": "/rick-and-morty-app/static/js/runtime-main.a1e94198.js",
     "runtime-main.js.map": "/rick-and-morty-app/static/js/runtime-main.a1e94198.js.map",
-    "static/js/2.d2eb4407.chunk.js": "/rick-and-morty-app/static/js/2.d2eb4407.chunk.js",
-    "static/js/2.d2eb4407.chunk.js.map": "/rick-and-morty-app/static/js/2.d2eb4407.chunk.js.map",
+    "static/css/2.448eeb83.chunk.css": "/rick-and-morty-app/static/css/2.448eeb83.chunk.css",
+    "static/js/2.b907d971.chunk.js": "/rick-and-morty-app/static/js/2.b907d971.chunk.js",
+    "static/js/2.b907d971.chunk.js.map": "/rick-and-morty-app/static/js/2.b907d971.chunk.js.map",
     "index.html": "/rick-and-morty-app/index.html",
-    "static/css/main.003afecf.chunk.css.map": "/rick-and-morty-app/static/css/main.003afecf.chunk.css.map",
-    "static/js/2.d2eb4407.chunk.js.LICENSE.txt": "/rick-and-morty-app/static/js/2.d2eb4407.chunk.js.LICENSE.txt",
+    "static/css/2.448eeb83.chunk.css.map": "/rick-and-morty-app/static/css/2.448eeb83.chunk.css.map",
+    "static/css/main.423e7ba7.chunk.css.map": "/rick-and-morty-app/static/css/main.423e7ba7.chunk.css.map",
+    "static/js/2.b907d971.chunk.js.LICENSE.txt": "/rick-and-morty-app/static/js/2.b907d971.chunk.js.LICENSE.txt",
     "static/media/404.ea6863db.png": "/rick-and-morty-app/static/media/404.ea6863db.png",
-    "static/media/logo.de13d484.png": "/rick-and-morty-app/static/media/logo.de13d484.png"
+    "static/media/App.scss": "/rick-and-morty-app/static/media/linkedin.b7c40ca6.svg",
+    "static/media/logo.de13d484.png": "/rick-and-morty-app/static/media/logo.de13d484.png",
+    "static/media/index.css": "/rick-and-morty-app/static/media/roboto-vietnamese-400-normal.52cebac0.woff2",
+    "static/media/work.999950e5.jpg": "/rick-and-morty-app/static/media/work.999950e5.jpg"
   },
   "entrypoints": [
     "static/js/runtime-main.a1e94198.js",
-    "static/js/2.d2eb4407.chunk.js",
-    "static/css/main.003afecf.chunk.css",
-    "static/js/main.9b633364.chunk.js"
+    "static/css/2.448eeb83.chunk.css",
+    "static/js/2.b907d971.chunk.js",
+    "static/css/main.423e7ba7.chunk.css",
+    "static/js/main.93f94335.chunk.js"
   ]
 }
