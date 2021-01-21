@@ -1,8 +1,6 @@
 # Rick and morty app
 
-## About project
-
-This project was create for learning react and react material
+This project was create for learning react and react material, with Teh Rick and Morty API see thislink for more details https://rickandmortyapi.com 
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
